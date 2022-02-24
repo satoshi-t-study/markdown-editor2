@@ -12,7 +12,6 @@ import { Editor } from './pages/editor'
 import { History } from './pages/history'
 import { useStateWithStorage } from './hooks/use_state_with_storage'
 
-
 const GlobalStyle = createGlobalStyle`
     body * {
       box-sizing: border-box;
@@ -20,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   `
 
 const StorageKey = '/editor:text'
-//render(Main, document.getElementById('app'))
+
 const Main: React.FC = () => {
   const [text, setText] = useStateWithStorage('', StorageKey)
 
